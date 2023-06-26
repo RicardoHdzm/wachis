@@ -162,3 +162,9 @@ option{
 ::-webkit-scrollbar-thumb:hover {
 	background: #a90e37;
 }
+
+@media only screen and (max-width: 760px){
+	.form-box{
+		width: 80%!important;
+	}
+}
