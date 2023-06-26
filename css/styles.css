@@ -1,0 +1,137 @@
+html, body{
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	background: linear-gradient(#000000, #0b1b23);
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth
+}
+
+
+.form-box h2{
+	margin: 0 0 30px;
+	padding: 0;
+	text-align: center;
+	letter-spacing: 20px;
+	color: #fff;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+.form-box h2 b{
+	color: #ce0037;
+}
+
+.btn{
+	font-size: small;
+
+}
+
+.form-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 10px;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0,0,0,.5);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 10px;
+	margin-top: 20px;
+	font-size: small;
+}
+
+.form-box .w-box{
+	position: relative;
+}
+
+.form-box .w-box input{
+	width: 100%;
+	padding: 10px 0;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+	font-size: small;
+	border-radius: 0px;
+
+}
+
+.form-box .w-box select{
+	width: 100%;
+	padding: 10px 0;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+	font-size: small;
+	border-radius: 0px;
+
+}
+
+.form-box .w-box label{
+	position: absolute;
+	top: -25px;
+	left: 0;
+	color: #ce0037!important;
+	font-size: small;
+	padding: 10px 0;
+	color: #fff;
+	pointer-events: none;
+}
+
+
+.form-box p{
+	font-size: xx-small;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.btn{
+	color: #fff;
+	background-color: #ce0037;
+	border-radius: 2px;
+	letter-spacing: 2px;
+	font-size: x-small;
+	transition: .2s;
+}
+
+.btn:hover{
+	transform: scale(1.05);
+}
+
+option{
+	color: black;
+}
+
+
+.form-box .w-box input:focus{
+	box-shadow: none;
+}
+
+.form-box .w-box select:focus{
+	box-shadow: none;
+}
+
+.btn:focus{
+	box-shadow: none;
+
+}
+
+.w-box input::placeholder{
+	color: #fff!important;
+}
+
+@media only screen and (max-width: 760px){
+	.form-box{
+	}
+}
