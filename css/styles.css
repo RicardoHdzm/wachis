@@ -1,22 +1,22 @@
 html, body{
-	height: 100%;
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
-	background: linear-gradient(#000000, #0b1b23);
-	margin: 0;
+	background: #141E30;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-attachment: fixed;
 	padding: 0;
-	scroll-behavior: smooth
+	scroll-behavior: smooth;
 }
 
 
 .form-box h2{
-	margin: 0 0 30px;
-	padding: 0;
 	text-align: center;
 	letter-spacing: 20px;
 	color: #fff;
 	font-size: x-large;
 	font-weight: bold;
+	padding-bottom: 50px!important;
 }
 
 .form-box h2 b{
@@ -29,18 +29,17 @@ html, body{
 }
 
 .form-box{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 400px;
-	padding-top: 50px;
+	width: fit-content;
+	height: fit-content;
+	padding-top: 100px;
 	padding-left: 50px;
 	padding-right: 50px;
-	padding-bottom: 10px;
-	transform: translate(-50%, -50%);
+	padding-bottom: 60px;
+	margin-top: 5rem!important;
+	margin-bottom: 3rem!important;
 	background-color: rgba(0,0,0,.5);
 	box-sizing: border-box;
-	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	box-shadow: 0 15px 25px rgba(0,0,0,.8);
 	border-radius: 10px;
 	margin-top: 20px;
 	font-size: small;
@@ -48,6 +47,8 @@ html, body{
 
 .form-box .w-box{
 	position: relative;
+	padding-bottom: 20px;
+
 }
 
 .form-box .w-box input{
@@ -87,16 +88,19 @@ html, body{
 	padding: 10px 0;
 	color: #fff;
 	pointer-events: none;
+	font-weight: bold;
 }
 
 
-.form-box p{
+p{
 	font-size: xx-small;
 	margin-top: 10px;
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 .btn{
+	margin-top: 40px;
 	color: #fff;
 	background-color: #ce0037;
 	border-radius: 2px;
@@ -131,8 +135,30 @@ option{
 	color: #fff!important;
 }
 
-@media only screen and (max-width: 760px){
-	.form-box{
-		width: 350px;
-	}
+.footer{
+	left: 0;
+	bottom: 0!important;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #0f161f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #ce0037;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #a90e37;
 }
